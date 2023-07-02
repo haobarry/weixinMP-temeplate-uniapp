@@ -1,0 +1,148 @@
+/* 颜色变量 */
+$zb-color: #FF6B38;
+$zb-logo-color: #FF5A09;
+$zb-assist-color: #FFE9DB;
+$zb-grey-color: #A6A6A6; //主色静默灰色
+
+/* 文字基本颜色 */
+$zb-text-assist-color: #808080;
+$zb-text-color: #333; // 基本色
+$zb-text-color-grey: #999; // 辅助灰色，如加载更多的提示信息
+$zb-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+$zb-bg-color: #ffffff;
+$zb-bg-color-mask: rgba(0, 0, 0, 0.4); // 遮罩颜色
+
+
+/* 自定义类 */
+.safe-area-inset-bottom {
+  padding-bottom: 0;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-area-bottom-view {
+  height: 140rpx;
+  height: calc(140rpx + constant(safe-area-inset-bottom));
+  height: calc(140rpx + env(safe-area-inset-bottom));
+}
+
+.zb-flex-row {
+  display: flex;
+}
+
+.zb-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.zb-flex-1 {
+  flex: 1;
+}
+
+.zb-border-radius {
+  border-radius: 24rpx;
+}
+
+.zb-ali-center {
+  align-items: center;
+}
+
+.zb-jus-center {
+  justify-content: center;
+}
+
+.zb-jus-evenly {
+  justify-content: space-evenly;
+}
+
+.zb-jus-around {
+  justify-content: space-around;
+}
+
+.zb-jus-between {
+  justify-content: space-between;
+}
+
+.zb-margin24 {
+  margin: 24rpx;
+}
+
+.zb-padding24 {
+  padding: 24rpx;
+
+}
+
+.zb-borderbox {
+  box-sizing: border-box;
+}
+
+
+
+.zb-big-button {
+  margin: 0 auto;
+  width: 666rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: #FF6B38;
+  border: 2rpx solid #FF6B38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.zb-bottom-button-white {
+  width: 666rpx;
+  height: 80rpx;
+  font-size: 34rpx;
+  line-height: 76rpx;
+  border: 2rpx solid #FF6B38;
+  border-radius: 41rpx;
+  position: fixed;
+  bottom: 12rpx;
+  bottom: calc(12rpx + constant(safe-area-inset-bottom));
+  bottom: calc(12rpx + env(safe-area-inset-bottom));
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+
+.zb-bottom-button-red {
+  width: 666rpx;
+  height: 80rpx;
+  font-size: 34rpx;
+  border: 2rpx solid #FF6B38;
+  line-height: 76rpx;
+  border-radius: 41rpx;
+  position: fixed;
+  bottom: 12rpx;
+  bottom: calc(12rpx + constant(safe-area-inset-bottom));
+  bottom: calc(12rpx + env(safe-area-inset-bottom));
+  left: 0;
+  right: 0;
+  color: #FFFFFF;
+  background: #FF6B38;
+}
+
+.zb-little-button-tag {
+  padding: 0 14rpx;
+  border: 2rpx solid #ff683b;
+  border-radius: 24rpx;
+  color: #ff683b;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-right: 24rpx;
+}
+
+.zb-big-button-tag {
+  border: 2rpx solid #FF6B38;
+  color: #FF6B38;
+  display: inline-block;
+  border-radius: 24rpx;
+  line-height: 44rpx;
+  font-size: 34rpx;
+  padding: 0 14rpx;
+  margin: 0 6rpx;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "appid": "",
+  "description": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  /* 小程序特有相关 */
+  "mp-weixin": {
+    "appid": "wx349c755c99630dca",
+    "setting": {
+      "urlCheck": true,
+      "postcss": true,
+      "minified": true,
+      "minifyWXML": true,
+      "minifyWXSS": true,
+      "es6": true,
+      "bigPackageSizeSupport": true,
+      "usingComponents": true
+    },
+    "requiredPrivateInfos": ["getLocation"],
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于定位信息的展示"
+      }
+    }
+  },
+  "uniStatistics": {
+    "enable": false
+  }
+}

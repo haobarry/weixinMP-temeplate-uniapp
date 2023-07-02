@@ -1,0 +1,20 @@
+# eslint 忽略检查 (根据项目需要自行添加)
+node_modules
+dist
+.idea
+.vscode
+.hbuilderx
+
+
+src/manifest.json
+src/pages.json
+*.sh
+*.md
+*.woff
+*.ttf
+*.yaml
+/public
+/docs
+.husky
+.local
+/bin

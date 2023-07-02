@@ -1,0 +1,79 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // 匹配node_modules内的vue文件
+      "^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  },
+  "entryPagePath": "pages/user-auth/index",
+  "pages": [
+    {
+      "path": "pages/user-auth/index"
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/user-auth/userRegister"
+    },
+    {
+      "path": "pages/user-auth/policy/privacy-policy",
+      "style": {
+        "navigationBarTitleText": "隐私政策"
+      }
+    },
+    {
+      "path": "pages/user-auth/policy/user-service-agreement",
+      "style": {
+        "navigationBarTitleText": "用户服务协议"
+      }
+    },
+    {
+      "path": "pages/user-auth/policy/legal-notice",
+      "style": {
+        "navigationBarTitleText": "法律声明"
+      }
+    },
+    {
+      "path": "pages/user-auth/policy/platform-rules",
+      "style": {
+        "navigationBarTitleText": "平台规则"
+      }
+    },
+    {
+      "path": "pages/my/no-authorized/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/my/no-authorized/myInfo",
+      "style": {
+        "navigationBarTitleText": "我的信息"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "animationType": "none"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#FF6B38",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/my/index"
+      }
+    ]
+  }
+}
